@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("images/wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouncing-heart {
+  animation: bounce 1s infinite;
+  transform-origin: center;
+  color: red; /* adjust the color to your liking */
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 40px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 34px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5),
+    4px 4px 6px rgba(255, 255, 255, 0.3); 
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5),
+    4px 4px 6px rgba(255, 255, 255, 0.3); 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  padding: 10px 40px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+#yes {
+  background-color: #32cd32;
+  color: white;
+}
+
+#no {
+  background-color: #ff474c;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("images/phone.jpg");
+  }
+  form {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 34px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5),
+      2px 2px 4px rgba(255, 255, 255, 0.3); 
+  }
+
+  h3 {
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5),
+      2px 2px 4px rgba(255, 255, 255, 0.3); 
+  }
+
+  input[type="submit"] {
+    font-size: 26px;
+    padding: 10px 20px;
+     border-radius: 15px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  body {
+    background-image: url("images/phone.jpg");
+  }
+  form {
+    height: 250px;
+  }
+}
